@@ -26,7 +26,7 @@ def get_users():
                             exclude = True
                             break  # Break just exits the current loop
                 if exclude:
-                    break  # Move on to next user
+                    continue  # Move on to next user
 
                 folder = "/home/"+u+"/public_html/"
                 index = folder + "index.html"
